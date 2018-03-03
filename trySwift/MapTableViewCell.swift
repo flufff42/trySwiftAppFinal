@@ -15,11 +15,14 @@ class MapTableViewCell: UITableViewCell {
 
     private weak var placemark: MKPlacemark?
     private weak var delegate: OpenInMapsDelegate?
+
+    var locationManager = CLLocationManager()
     
     override func awakeFromNib() {
         super.awakeFromNib()
         self.contentView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(onTapGesture(_:))))
         self.contentView.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: #selector(onLongPressGesture(_:))))
+        locationManager.requestWhenInUseAuthorization()
     }
     
     @objc func onTapGesture(_ sender: Any) {

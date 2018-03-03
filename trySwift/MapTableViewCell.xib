@@ -14,8 +14,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="257.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="OhN-49-IBd">
-                        <rect key="frame" x="8" y="0.0" width="304" height="257.5"/>
+                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OhN-49-IBd">
+                        <rect key="frame" x="16" y="0.0" width="288" height="257.5"/>
                     </mapView>
                 </subviews>
                 <constraints>
